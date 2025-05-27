@@ -5,7 +5,7 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 import 'package:pomodo/Pages/circular_timer.dart';
 
 class HomePage extends StatefulWidget {
-  HomePage({super.key});
+  const HomePage({super.key});
 
   @override
   State<HomePage> createState() => _HomePageState();
@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
         children: [
           if (task != null)
             Padding(
-              padding: const EdgeInsets.only(top: 30, left: 35, right: 35),
+              padding: const EdgeInsets.only(top: 50, left: 35, right: 35),
               child: Slidable(
                 key: ValueKey(task),
                 endActionPane: ActionPane(
@@ -78,8 +78,8 @@ class _HomePageState extends State<HomePage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: 450,
-                    height: 400,
+                    width: 350,
+                    height: 350,
                     decoration: BoxDecoration(
                       color: const Color(0xffdadbdd),
                       borderRadius: BorderRadius.circular(30),
@@ -209,7 +209,7 @@ class _HomePageState extends State<HomePage> {
               Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  SizedBox(height: 60),
+                  SizedBox(height: 20),
                   GestureDetector(
                     onTap: () {
                       showCupertinoModalPopup(

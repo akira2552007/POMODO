@@ -1,5 +1,4 @@
 import 'package:circular_countdown_timer/circular_countdown_timer.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MyWidget extends StatelessWidget {
