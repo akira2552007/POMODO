@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 
 class MyWidget extends StatelessWidget {
   final CountDownController controller;
-  const MyWidget({super.key, required this.controller});
+  const MyWidget({super.key, required this.controller, required this.time});
+  final int time;
 
   @override
   Widget build(BuildContext context) {
@@ -11,9 +12,10 @@ class MyWidget extends StatelessWidget {
       child: CircularCountDownTimer(
         width: 100, // smaller fixed size
         height: 150,
-        duration: 60,
-        fillColor: Colors.grey[500]!,
+        duration: 60 * time,
+        fillColor: Colors.orange,
         ringColor: Colors.grey[200]!,
+        fillGradient: LinearGradient(colors: [Colors.blue, Colors.purple]),
         controller: controller,
         isReverse: true,
         isTimerTextShown: true,
@@ -28,4 +30,5 @@ class MyWidget extends StatelessWidget {
       ),
     );
   }
+  
 }
