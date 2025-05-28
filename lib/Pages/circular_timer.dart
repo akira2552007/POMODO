@@ -12,7 +12,7 @@ class MyWidget extends StatelessWidget {
         width: 100, // smaller fixed size
         height: 150,
         duration: 60,
-        fillColor: Colors.purpleAccent[100]!,
+        fillColor: Colors.grey[500]!,
         ringColor: Colors.grey[200]!,
         controller: controller,
         isReverse: true,
