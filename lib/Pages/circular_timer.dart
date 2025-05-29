@@ -9,13 +9,19 @@ class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FittedBox(
+      
       child: CircularCountDownTimer(
+        textStyle: TextStyle(
+          fontSize: 20,
+          color: Colors.orange,
+          
+        ),
         width: 100, // smaller fixed size
         height: 150,
         duration: 60 * time,
         fillColor: Colors.orange,
         ringColor: Colors.grey[200]!,
-        fillGradient: LinearGradient(colors: [Colors.blue, Colors.purple]),
+        fillGradient: LinearGradient(colors: [Colors.white, Colors.orange]),
         controller: controller,
         isReverse: true,
         isTimerTextShown: true,
